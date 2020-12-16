@@ -16,7 +16,7 @@ import java.util.Objects;
 @NoArgsConstructor
 public class Link extends Auditable{
 
-    
+
     @Id
     @GeneratedValue
     private long id;
