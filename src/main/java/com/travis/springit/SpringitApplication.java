@@ -30,7 +30,8 @@ public class SpringitApplication {
 		SpringApplication.run(SpringitApplication.class, args);
 
 	}
-	//@Bean
+
+	@Bean
 	//@Profile("devs")
 	CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository){
 		return args -> {
