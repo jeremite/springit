@@ -1,21 +1,23 @@
 package com.travis.springit.domain;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-@Data
-@NoArgsConstructor
+@Getter
+@Setter
+@RequiredArgsConstructor
+//@NoArgsConstructor
 public class Vote extends Auditable{
 
     @Id
     @GeneratedValue
     private long id;
-    private int vote;
+
+    //private int vote;
 
     //user
     //link
