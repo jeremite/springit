@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-@EnableJpaAuditing
+//@EnableJpaAuditing
 @EnableConfigurationProperties(SpringitProperties.class)
 public class SpringitApplication {
 
