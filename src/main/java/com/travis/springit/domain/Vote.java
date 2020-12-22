@@ -5,21 +5,24 @@ import lombok.*;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
+@NoArgsConstructor
+@RequiredArgsConstructor
 @Getter
 @Setter
-@RequiredArgsConstructor
-//@NoArgsConstructor
-public class Vote extends Auditable{
+public class Vote extends Auditable {
 
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
 
-    //private int vote;
+    @NonNull
+    private short direction;
 
-    //user
-    //link
+    @NonNull
+    @ManyToOne
+    private Link link;
 
 }
